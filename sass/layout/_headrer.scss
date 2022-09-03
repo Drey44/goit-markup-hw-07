@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.menu {
+.menu-list {
     display: flex;
     align-items: center;
 }
@@ -41,6 +41,10 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: inherit;
+    &:hover,
+        &:focus {
+            color: var(--acent-color);
+        }
 }
 
 .link-mail,
@@ -49,37 +53,35 @@
     align-items: center;
     column-gap: 10px;
     color: var(--secondary-text-color);
+    .mail-icon,
+        .tel-icon {
+            fill: currentColor;
+        }
 }
 
-.mail-icon,
-.tel-icon {
-    fill: currentColor;
-}
+
 
 .link-mail {
     margin-right: 30px;
 }
 
-.page-header-container .link:hover,
-.page-header-container .link:focus {
-    color: var(--acent-color);
-}
+
 
 .active {
     color: var(--acent-color);
     display: block;
     position: relative;
+&::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 4px;
+        bottom: 0px;
+        left: 0px;
+        transform: translateY(32px);
+        border-radius: 2px;
+        background-color: var(--acent-color);
+    }
 }
 
-.active::after {
-    position: absolute;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 4px;
-    bottom: 0px;
-    left: 0px;
-    transform: translateY(32px);
-    border-radius: 2px;
-    background-color: var(--acent-color);
-}

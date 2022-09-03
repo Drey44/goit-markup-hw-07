@@ -3,6 +3,7 @@
     justify-content: center;
     column-gap: 30px;
     flex-wrap: wrap;
+    
 }
 
 .clients-link {
@@ -16,14 +17,12 @@
     color: var(--team-social-list-and-cliends-icon-color);
     transition: border-color var(--transition-delay-and-duration),
         color var(--transition-delay-and-duration);
+        &:hover,
+            &:focus {
+                border-color: var(--acent-color);
+                color: var(--acent-color);
 }
-
 .clients-icon {
     fill: currentColor;
 }
-
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--acent-color);
-    color: var(--acent-color);
 }

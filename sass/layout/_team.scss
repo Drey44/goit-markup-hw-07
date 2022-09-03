@@ -59,19 +59,20 @@
     justify-content: center;
     align-items: center;
     transition: background-color var(--transition-delay-and-duration);
+&:hover,
+    &:focus {
+        background-color: var(--acent-color);
+    }
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--acent-color);
-}
+
 
 .social-list-icon {
     fill: var(--team-social-list-and-cliends-icon-color);
     transition: fill var(--transition-delay-and-duration);
+.social-list-link:hover &,
+    .social-list-link:focus & {
+        fill: var(--white-color);
+    }
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: var(--white-color);
-}
