@@ -29,9 +29,10 @@
 
 .modal-close-btn-icon {
     transition: fill var(--transition-delay-and-duration);
+.modal-close-btn:focus &,
+    .modal-close-btn:hover & {
+        fill: var(--acent-color);
+    }
+
 }
 
-.modal-close-btn:focus .modal-close-btn-icon,
-.modal-close-btn:hover .modal-close-btn-icon {
-    fill: var(--acent-color);
-}
