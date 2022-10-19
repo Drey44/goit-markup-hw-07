@@ -2,12 +2,8 @@
         padding-bottom: 0px;
 }
 
-
-
-
 .features-list {
     display: flex;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -24,13 +20,8 @@
 }
 
 .features-list__item {
-    /* width: 270px;*/
-    width: calc((100% - 90px) / 4);
+        width: calc((100% - 90px) / 4);
 }
-
-/*.features-list__item:not(:last-child) {
-    margin-right: 30px;
-}*/
 
 .features-list__title {
     font-weight: 700;
@@ -43,6 +34,5 @@
 .features-list__text {
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
-    color: var(--secondary-text-color);
+      color: var(--secondary-text-color);
 }

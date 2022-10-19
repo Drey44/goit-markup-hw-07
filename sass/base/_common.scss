@@ -36,8 +36,9 @@ button {
 .list {
     list-style: none;
 }
+
 .body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
 }

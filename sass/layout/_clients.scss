@@ -3,8 +3,7 @@
     justify-content: center;
     column-gap: 30px;
     flex-wrap: wrap;
-    
-}
+    }
 
 .clients-link {
     display: flex;
@@ -22,6 +21,7 @@
                 border-color: var(--acent-color);
                 color: var(--acent-color);
 }
+
 .clients-icon {
     fill: currentColor;
 }
